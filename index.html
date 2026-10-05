@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>xxxx电影网 - 最新电影电视剧在线观看_热播影视排行榜与影评</title>
+<meta name="description" content="xxxx电影网每日编目更新最新电影、热播电视剧、综艺动漫与高分纪录片，提供剧情介绍、演职员表、口碑评分、书架索书号分类与在线观看指南，移动端自适应，找片看片一站搞定。">
+<meta name="keywords" content="xxxx电影网,xxxx影视,最新电影,热播电视剧,在线观看,高清影视,影视排行榜,综艺,动漫,纪录片,影评">
+<meta name="author" content="xxxx电影网">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#1f3a5f">
+<meta name="msvalidate.01" content="your-bing-verify-code">
+<link rel="canonical" href="https://xxxxdianyingwang-cn.github.io/">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<link rel="alternate" hreflang="zh-CN" href="https://xxxxdianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="xxxx电影网">
+<meta property="og:title" content="xxxx电影网 - 最新电影电视剧在线观看_热播影视排行榜与影评">
+<meta property="og:description" content="xxxx电影网每日编目更新最新电影、热播剧集、综艺动漫与高分纪录片，移动端自适应浏览。">
+<meta property="og:url" content="https://xxxxdianyingwang-cn.github.io/">
+<meta property="og:image" content="https://xxxxdianyingwang-cn.github.io/favicon.ico">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="xxxx电影网 - 最新电影电视剧在线观看">
+<meta name="twitter:description" content="最新电影、热播剧集、综艺动漫与高分纪录片聚合，每日编目更新。">
+<style>
+:root{
+  --paper:#f4ecd8;
+  --paper2:#ece1c6;
+  --paper3:#e3d5b5;
+  --ink:#1f3a5f;
+  --ink2:#37567d;
+  --ink3:#6d8299;
+  --red:#b03a2e;
+  --red2:#d4736a;
+  --kraft:#c8a86b;
+  --kraft2:#a9884c;
+  --rule:#a9c0d6;
+  --edge:#d9c9a3;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --serif:"Songti SC","SimSun",Georgia,"Times New Roman",serif;
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,"Courier New",monospace;
+  --maxw:1200px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;color:var(--ink);font:400 16px/1.85 var(--sans);overflow-x:hidden;background:var(--paper);
+  background-image:
+    repeating-linear-gradient(90deg,rgba(31,58,95,.028) 0 1px,transparent 1px 26px),
+    radial-gradient(900px 520px at 50% -14%,rgba(200,168,107,.3),transparent 62%),
+    radial-gradient(700px 420px at 92% 6%,rgba(176,58,46,.08),transparent 60%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol,dl,dd,dt{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;line-height:1.34;font-weight:800;letter-spacing:.06em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(14px,3.6vw,30px)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.callno{font-family:var(--mono);letter-spacing:.06em}
+
+/* 抽屉标签式栏目徽记 */
+.tab{
+  width:56px;height:38px;flex:0 0 auto;position:relative;display:grid;place-items:center;
+  background:linear-gradient(180deg,var(--kraft),var(--kraft2));
+  border:1px solid var(--kraft2);border-radius:2px;
+  box-shadow:0 2px 6px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.4);
+}
+.tab::before,.tab::after{
+  content:"";position:absolute;top:50%;width:5px;height:5px;border-radius:50%;
+  background:var(--paper);transform:translateY(-50%);box-shadow:inset 0 1px 2px rgba(0,0,0,.4);
+}
+.tab::before{left:4px}
+.tab::after{right:4px}
+.tab span{font-family:var(--mono);font-size:13px;font-weight:800;color:#3b2a10}
+
+/* ===== 开馆播报条 ===== */
+.notice{border-bottom:1px solid var(--edge);background:linear-gradient(180deg,var(--paper2),var(--paper3))}
+.notice .wrap{display:flex;align-items:center;gap:14px;height:38px;white-space:nowrap;overflow:hidden}
+.notice .open{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:8px;padding:3px 13px;
+  border:1px solid var(--red);font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--red);
+}
+.notice .open i{width:8px;height:8px;border-radius:50%;background:var(--red)}
+.notice .roll{display:flex;gap:24px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--ink3)}
+.notice b{color:var(--ink)}
+
+/* ===== 顶栏 ===== */
+.topbar{position:sticky;top:0;z-index:80;background:rgba(244,236,216,.95);backdrop-filter:blur(14px);border-bottom:2px solid var(--ink)}
+.topbar .wrap{display:flex;align-items:center;gap:13px;height:80px}
+.logo{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+.logo-mark{width:56px;height:44px;flex:0 0 auto}
+.logo-txt b{display:block;font-family:var(--serif);font-size:24px;letter-spacing:.1em}
+.logo-txt b em{font-style:normal;color:var(--red)}
+.logo-txt span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--ink3)}
+.search{flex:1 1 auto;max-width:330px;margin-left:auto;display:flex}
+.search input{
+  flex:1;min-width:0;height:42px;padding:0 15px;font:400 14px var(--sans);color:var(--ink);
+  border:2px solid var(--ink);border-right:0;background:#fffdf6;outline:none;
+}
+.search input::placeholder{color:var(--ink3)}
+.search button{
+  height:42px;padding:0 20px;cursor:pointer;font-family:var(--mono);font-size:12.5px;font-weight:800;letter-spacing:.12em;
+  border:2px solid var(--ink);background:var(--ink);color:var(--paper);
+}
+.search button:hover{background:var(--red);border-color:var(--red);color:#fff}
+.burger{
+  display:none;margin-left:auto;width:44px;height:42px;cursor:pointer;font-size:17px;color:var(--ink);
+  border:2px solid var(--ink);background:#fffdf6;
+}
+
+/* ===== 导航 ===== */
+.nav{background:var(--ink)}
+.nav ul{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding:0}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a{
+  display:block;padding:12px 16px;font-size:13.5px;letter-spacing:.08em;color:rgba(244,236,216,.78);
+  white-space:nowrap;transition:.22s;
+}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.nav a.on{color:var(--ink);background:var(--kraft);font-weight:800}
+
+/* ===== 主视觉：目录抽屉柜 ===== */
+.hero{padding:clamp(20px,3.6vw,36px) 0 6px}
+.cabinet{
+  border:2px solid var(--ink);background:linear-gradient(180deg,var(--paper2),var(--paper3));
+  box-shadow:0 16px 34px rgba(31,58,95,.24);
+}
+.cab-top{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  padding:12px 18px;border-bottom:2px solid var(--ink);background:var(--ink);color:var(--paper);
+}
+.cab-top .ttl{font-family:var(--serif);font-size:17px;font-weight:800;letter-spacing:.2em}
+.cab-top .no{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--kraft)}
+.cab-body{display:grid;grid-template-columns:1.34fr 1fr}
+/* 大卡片 */
+.bigcard{
+  padding:clamp(20px,3vw,34px);display:flex;flex-direction:column;justify-content:space-between;min-height:430px;
+  background:
+    repeating-linear-gradient(0deg,transparent 0 29px,var(--rule) 29px 30px),
+    #fffdf6;
+  background-position:0 8px;
+  border-right:2px solid var(--ink);position:relative;
+}
+.bigcard::before{
+  content:"";position:absolute;left:clamp(46px,5vw,64px);top:0;bottom:0;width:1px;background:var(--red2);
+}
+.bc-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;position:relative;z-index:2}
+.bc-head .call{
+  font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--ink2);
+  border-bottom:1px solid var(--rule);padding-bottom:4px;
+}
+.bc-head .call b{color:var(--red);font-weight:800}
+.bc-head .stamp{
+  flex:0 0 auto;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;text-align:center;
+  border:2px solid var(--red);color:var(--red);transform:rotate(-14deg);
+  font-family:var(--serif);font-size:12px;font-weight:800;line-height:1.25;letter-spacing:.1em;
+  box-shadow:inset 0 0 0 3px rgba(176,58,46,.16);opacity:.9;
+}
+.bc-mid{position:relative;z-index:2;padding-left:clamp(20px,3.4vw,42px)}
+.bc-mid .genre{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--ink3)}
+.bc-mid h1{font-family:var(--serif);font-size:clamp(30px,5.8vw,50px);letter-spacing:.1em;margin:8px 0 12px;color:var(--ink)}
+.bc-mid .rows{display:grid;gap:6px;max-width:430px}
+.bc-mid .rows div{display:flex;gap:12px;align-items:baseline;font-size:13.5px;border-bottom:1px dotted var(--rule);padding-bottom:5px}
+.bc-mid .rows dt{width:64px;flex:0 0 auto;font-family:var(--mono);font-size:11.5px;color:var(--ink3);letter-spacing:.1em}
+.bc-mid .rows dd{margin:0;color:var(--ink2);font-weight:700}
+.bc-foot{position:relative;z-index:2;padding-left:clamp(20px,3.4vw,42px)}
+.bc-foot p{margin:0 0 14px;font-size:14px;color:var(--ink2);max-width:50ch;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  padding:11px 26px;cursor:pointer;font-family:var(--mono);font-size:13px;letter-spacing:.1em;
+  border:2px solid var(--ink);background:transparent;color:var(--ink);transition:.22s;
+}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.pri{background:var(--red);border-color:var(--red);color:#fff;font-weight:800}
+.btn.pri:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+
+/* 抽屉列表 */
+.drawers{padding:18px;display:grid;gap:12px;align-content:center;background:rgba(227,213,181,.5)}
+.drawers h3{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--ink2);padding-bottom:9px;border-bottom:1px solid var(--kraft)}
+.drawers ol{display:grid;gap:10px}
+.drawers li{
+  display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;
+  padding:12px 14px;background:#fffdf6;border:1px solid var(--edge);border-left:4px solid var(--kraft);
+  box-shadow:0 2px 5px rgba(31,58,95,.12);transition:.22s;
+}
+.drawers li:hover{transform:translateX(4px);border-left-color:var(--red)}
+.drawers li:nth-child(2){border-left-color:var(--ink2)}
+.drawers li:nth-child(3){border-left-color:var(--red2)}
+.drawers li:nth-child(4){border-left-color:var(--kraft2)}
+.drawers .cn{font-family:var(--mono);font-size:11px;color:var(--red);letter-spacing:.04em}
+.drawers .cn b{display:block;font-size:13px;color:var(--ink)}
+.drawers .meta{min-width:0}
+.drawers .meta b{display:block;font-size:14.5px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.drawers .meta span{font-size:12px;color:var(--ink3)}
+.drawers .av{font-family:var(--mono);font-size:11px;font-weight:800;color:var(--ink);
+  background:var(--kraft);padding:3px 9px;white-space:nowrap}
+
+/* ===== 区块 ===== */
+section{padding:clamp(26px,3.8vw,44px) 0}
+.sec-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.sec-head .left{display:flex;align-items:center;gap:14px;min-width:0}
+.sec-head h2{font-family:var(--serif);font-size:clamp(20px,3.6vw,28px)}
+.sec-head .sub{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--ink3);margin-top:4px;font-weight:400}
+.sec-head .more{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;color:var(--ink2);
+  padding:8px 16px;border:1px solid var(--kraft2);transition:.22s;
+}
+.sec-head .more:hover{color:#fff;background:var(--ink);border-color:var(--ink)}
+
+/* 索书号筛选 */
+.shelf{display:flex;gap:9px;overflow-x:auto;scrollbar-width:none;margin-bottom:18px}
+.shelf::-webkit-scrollbar{display:none}
+.shelf button{
+  display:inline-flex;align-items:center;gap:8px;padding:8px 15px;cursor:pointer;white-space:nowrap;
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--ink2);
+  border:1px solid var(--kraft2);background:#fffdf6;transition:.22s;
+}
+.shelf button:hover{color:var(--ink);border-color:var(--ink2)}
+.shelf button.on{color:#fff;background:var(--ink);border-color:var(--ink);font-weight:800}
+.shelf button .dot{width:9px;height:9px;flex:0 0 auto;background:var(--kraft)}
+.shelf button[data-f="drama"] .dot{background:var(--ink2)}
+.shelf button[data-f="action"] .dot{background:var(--red)}
+.shelf button[data-f="love"] .dot{background:#a4577f}
+.shelf button[data-f="comedy"] .dot{background:var(--kraft2)}
+.shelf button[data-f="scifi"] .dot{background:#3f7d7a}
+
+/* ===== 横向目录卡 ===== */
+.catalogue{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(310px,1fr))}
+.cat{margin:0;transition:.26s}
+.cat:hover{transform:translateY(-5px)}
+.cat > a{
+  display:grid;grid-template-columns:58px 1fr;min-height:176px;background:#fffdf6;
+  border:1px solid var(--edge);border-left:2px solid var(--ink);
+  box-shadow:0 3px 8px rgba(31,58,95,.14);overflow:hidden;
+}
+.cat:hover > a{border-color:var(--kraft2);box-shadow:0 12px 26px rgba(31,58,95,.22)}
+/* 书脊 */
+.spine{
+  position:relative;display:grid;align-content:space-between;justify-items:center;padding:12px 6px;
+  color:#fff8e8;overflow:hidden;
+}
+.cat.s1 .spine{background:linear-gradient(180deg,#2c4f79,#1b3552)}
+.cat.s2 .spine{background:linear-gradient(180deg,#a44438,#71281f)}
+.cat.s3 .spine{background:linear-gradient(180deg,#3f7d7a,#24504e)}
+.cat.s4 .spine{background:linear-gradient(180deg,#b07f3c,#7d5520)}
+.cat.s5 .spine{background:linear-gradient(180deg,#5d4b8c,#3a2d5c)}
+.cat.s6 .spine{background:linear-gradient(180deg,#8a5a72,#57344a)}
+.spine .vno{
+  writing-mode:vertical-rl;font-family:var(--mono);font-size:12px;font-weight:800;letter-spacing:.24em;
+  opacity:.95;
+}
+.spine .band{
+  width:100%;height:12px;background:rgba(255,248,232,.3);
+  box-shadow:0 0 0 1px rgba(255,248,232,.5);
+}
+.spine .yr{font-family:var(--mono);font-size:11px;opacity:.9}
+/* 卡片格 */
+.slip{
+  position:relative;padding:14px 16px 12px;
+  background:repeating-linear-gradient(0deg,transparent 0 27px,var(--rule) 27px 28px);
+  background-position:0 6px;display:flex;flex-direction:column;justify-content:space-between;
+}
+.slip::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--red2)}
+.slip .top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;position:relative;z-index:2}
+.slip .top .cn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--ink3)}
+.slip .top .cn b{display:block;font-size:12.5px;color:var(--red);letter-spacing:.06em}
+.slip .top .score{
+  font-family:var(--mono);font-size:13px;font-weight:800;color:#fff;background:var(--red);padding:2px 9px;
+}
+.slip .mid{position:relative;z-index:2;margin:6px 0}
+.slip .mid b{
+  display:block;font-family:var(--serif);font-size:20px;font-weight:800;letter-spacing:.08em;color:var(--ink);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.slip .mid .sub{display:block;font-size:12.5px;color:var(--ink3);margin-top:2px}
+.slip dl{
+  position:relative;z-index:2;display:flex;gap:12px;flex-wrap:wrap;padding-top:7px;
+  border-top:1px dotted var(--rule);font-family:var(--mono);font-size:10.5px;color:var(--ink3);
+}
+.slip dl div{display:flex;gap:4px}
+.slip dl dd{color:var(--ink2)}
+.slip dl dd.hi{color:var(--red)}
+.slip .stamp{
+  position:absolute;right:12px;bottom:10px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  text-align:center;border:2px solid var(--red);color:var(--red);transform:rotate(-12deg);opacity:.85;
+  font-family:var(--serif);font-size:10px;font-weight:800;line-height:1.1;letter-spacing:.06em;
+}
+
+/* 书架分区 */
+.stacks{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.stacks a{
+  display:block;padding:20px 18px 22px;background:#fffdf6;border:1px solid var(--edge);
+  border-bottom:4px solid var(--kraft);transition:.26s;position:relative;
+}
+.stacks a:hover{transform:translateY(-5px);border-color:var(--kraft2);border-bottom-color:var(--red);box-shadow:0 12px 24px rgba(31,58,95,.2)}
+.stacks .rng{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;color:var(--red)}
+.stacks a:nth-child(2) .rng{color:var(--ink2)}
+.stacks a:nth-child(3) .rng{color:#a4577f}
+.stacks a:nth-child(4) .rng{color:var(--kraft2)}
+.stacks a:nth-child(5) .rng{color:#3f7d7a}
+.stacks a:nth-child(6) .rng{color:#5d4b8c}
+.stacks b{display:block;font-family:var(--serif);font-size:18px;font-weight:800;letter-spacing:.1em;margin:6px 0 5px}
+.stacks span{display:block;font-size:12.5px;color:var(--ink3)}
+.stacks .shelfline{margin-top:12px;height:6px;border-top:1px solid var(--kraft2);border-bottom:1px solid var(--kraft2)}
+
+/* 借阅规则（ol.rules） */
+.rules{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(232px,1fr))}
+.rules li{
+  padding:20px;background:#fffdf6;border:1px solid var(--edge);border-left:4px solid var(--ink2);transition:.24s;
+}
+.rules li:nth-child(2){border-left-color:var(--red)}
+.rules li:nth-child(3){border-left-color:var(--kraft2)}
+.rules li:nth-child(4){border-left-color:#3f7d7a}
+.rules li:hover{transform:translateY(-4px);box-shadow:0 10px 22px rgba(31,58,95,.16)}
+.rules em{
+  display:inline-block;font-style:normal;font-family:var(--mono);font-size:13px;font-weight:800;
+  color:#fff;background:var(--ink2);padding:4px 12px;letter-spacing:.06em;
+}
+.rules li:nth-child(2) em{background:var(--red)}
+.rules li:nth-child(3) em{background:var(--kraft2)}
+.rules li:nth-child(4) em{background:#3f7d7a}
+.rules b{display:block;font-family:var(--serif);font-size:16px;font-weight:800;letter-spacing:.08em;margin:11px 0 6px}
+.rules span{font-size:13px;color:var(--ink3);line-height:1.85}
+
+/* 借阅排行 */
+.loans{display:grid;gap:9px}
+.loans li{
+  display:grid;grid-template-columns:44px 1fr 120px auto;align-items:center;gap:14px;
+  padding:12px 15px;background:#fffdf6;border:1px solid var(--edge);transition:.24s;
+}
+.loans li:hover{padding-left:19px;border-color:var(--kraft2);box-shadow:0 8px 18px rgba(31,58,95,.14)}
+.loans .no{font-family:var(--mono);font-size:15px;font-weight:800;color:var(--red)}
+.loans li:nth-child(2) .no{color:var(--ink2)}
+.loans li:nth-child(3) .no{color:var(--kraft2)}
+.loans .ti{min-width:0}
+.loans .ti b{display:block;font-size:14.5px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.loans .ti span{font-family:var(--mono);font-size:11px;color:var(--ink3)}
+.loans .bar{height:9px;background:var(--paper3);border:1px solid var(--edge);overflow:hidden}
+.loans .bar i{display:block;height:100%;background:repeating-linear-gradient(45deg,var(--red) 0 6px,var(--red2) 6px 12px)}
+.loans .cnt{font-family:var(--mono);font-size:12.5px;font-weight:800;color:var(--ink);white-space:nowrap}
+
+/* 读书笔记 */
+.notes{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(272px,1fr))}
+.notes article{background:#fffdf6;border:1px solid var(--edge);transition:.28s;overflow:hidden;box-shadow:0 3px 8px rgba(31,58,95,.1)}
+.notes article:hover{transform:translateY(-5px);border-color:var(--kraft2);box-shadow:0 14px 28px rgba(31,58,95,.2)}
+.notes .tab{
+  width:auto;height:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:0;
+  padding:10px 16px;box-shadow:none;border:0;border-bottom:2px solid var(--ink);
+}
+.notes .tab::before,.notes .tab::after{display:none}
+.notes .tab span{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:#3b2a10}
+.notes article:nth-child(2) .tab{background:linear-gradient(180deg,#dfe6ee,#c6d2de)}
+.notes article:nth-child(3) .tab{background:linear-gradient(180deg,#e4d9bf,#cfc09f)}
+.notes .bd{padding:15px 17px 18px}
+.notes h3{font-family:var(--serif);font-size:17px;margin-bottom:7px}
+.notes h3 a:hover{color:var(--red)}
+.notes p{margin:0;font-size:13px;color:var(--ink3);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.notes footer{margin-top:11px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--ink3)}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.panel{background:#fffdf6;border:1px solid var(--edge);padding:22px;box-shadow:0 3px 8px rgba(31,58,95,.1)}
+.panel h3{font-family:var(--serif);font-size:18px;padding-bottom:11px;margin-bottom:8px;border-bottom:1px solid var(--rule)}
+.kv{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px dotted var(--rule);font-size:13.5px}
+.kv:last-child{border:0}
+.kv span{font-family:var(--mono);font-size:12.5px;color:var(--ink3);text-align:right}
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tags a{padding:6px 16px;font-size:12.5px;color:var(--ink2);border:1px solid var(--kraft2);transition:.22s}
+.tags a:hover{color:#fff;background:var(--ink);border-color:var(--ink)}
+.faq{display:grid;gap:0}
+.faq > div{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:12px 0;border-bottom:1px dotted var(--rule)}
+.faq > div:last-child{border-bottom:0}
+.faq dt{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:#fff;background:var(--ink2);
+  padding:3px 6px;text-align:center;height:fit-content}
+.faq dd{margin:0}
+.faq dd b{display:block;font-size:14px;font-weight:800;margin-bottom:3px}
+.faq dd span{font-size:12.5px;color:var(--ink3)}
+
+/* 页脚 */
+footer{margin-top:26px;border-top:2px solid var(--ink);background:linear-gradient(180deg,var(--paper2),var(--paper3));padding:32px 0 34px}
+footer h4{font-family:var(--mono);font-size:12px;letter-spacing:.22em;color:var(--red);margin-bottom:12px}
+footer p,footer li{font-size:13px;color:var(--ink3);margin:0 0 7px}
+footer li a:hover{color:var(--red)}
+.fgrid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.copy{margin-top:24px;padding-top:16px;border-top:1px solid var(--edge);font-size:12.5px;color:var(--ink3);text-align:center;line-height:1.9}
+.copy b{font-family:var(--mono);color:var(--ink)}
+
+.top{
+  position:fixed;right:16px;bottom:16px;width:46px;height:46px;cursor:pointer;font-size:17px;
+  border:2px solid var(--ink);background:rgba(244,236,216,.96);color:var(--ink);display:none;z-index:90;
+}
+.top.show{display:block}
+.empty{padding:30px;text-align:center;color:var(--ink3);font-size:14px;display:none}
+
+/* ===== 响应式 ===== */
+@media (max-width:900px){
+  .cab-body{grid-template-columns:1fr}
+  .bigcard{min-height:0;border-right:0;border-bottom:2px solid var(--ink)}
+  .drawers{grid-template-columns:1fr 1fr;display:grid;gap:16px}
+  .drawers h3{grid-column:1 / -1}
+  .cols{grid-template-columns:1fr}
+}
+@media (max-width:768px){
+  .search{display:none}
+  .burger{display:block}
+  .nav{display:none}
+  .nav.open{display:block}
+  .nav ul{flex-direction:column;gap:0;overflow:visible}
+  .nav a{border-bottom:1px solid rgba(255,255,255,.14);padding:13px 4px}
+  .nav a.on{border-left:4px solid var(--red);padding-left:12px}
+  .catalogue{grid-template-columns:1fr;gap:12px}
+  .cat:hover,.notes article:hover,.stacks a:hover,.loans li:hover,.rules li:hover,.drawers li:hover{transform:none}
+  .loans li:hover{padding-left:15px}
+}
+@media (max-width:480px){
+  .logo-mark{width:50px;height:40px}
+  .logo-txt b{font-size:21px}
+  .catalogue{grid-template-columns:1fr}
+  .cat > a{grid-template-columns:48px 1fr;min-height:160px}
+  .slip{padding:12px 13px 10px}
+  .slip .mid b{font-size:18px}
+  .slip .stamp{width:40px;height:40px;right:9px;bottom:8px;font-size:9px}
+  .sec-head h2{font-size:21px}
+  .loans li{grid-template-columns:38px 1fr auto;gap:10px}
+  .loans .bar{grid-column:2 / -1}
+  .stacks{grid-template-columns:1fr 1fr}
+  .bigcard{padding:20px 18px}
+  .bc-head .stamp{width:62px;height:62px;font-size:11px}
+  .notice .roll{gap:16px;font-size:11px}
+  .drawers{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://xxxxdianyingwang-cn.github.io/#website",
+      "url":"https://xxxxdianyingwang-cn.github.io/",
+      "name":"xxxx电影网",
+      "alternateName":["xxxx影视","xxxx在线观看"],
+      "inLanguage":"zh-CN",
+      "description":"xxxx电影网提供最新电影、热播电视剧、综艺、动漫、纪录片的介绍及影视排行榜。",
+      "potentialAction":{
+        "@type":"SearchAction",
+        "target":{"@type":"EntryPoint","urlTemplate":"https://xxxxdianyingwang-cn.github.io/search?q={search_term_string}"},
+        "query-input":"required name=search_term_string"
+      }
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://xxxxdianyingwang-cn.github.io/#org",
+      "url":"https://xxxxdianyingwang-cn.github.io/",
+      "name":"xxxx电影网",
+      "logo":"https://xxxxdianyingwang-cn.github.io/favicon.ico"
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"首页","item":"https://xxxxdianyingwang-cn.github.io/"},
+        {"@type":"ListItem","position":2,"name":"新书上架","item":"https://xxxxdianyingwang-cn.github.io/#movie"},
+        {"@type":"ListItem","position":3,"name":"热播剧集","item":"https://xxxxdianyingwang-cn.github.io/#tv"},
+        {"@type":"ListItem","position":4,"name":"综艺动漫","item":"https://xxxxdianyingwang-cn.github.io/#show"},
+        {"@type":"ListItem","position":5,"name":"纪录片","item":"https://xxxxdianyingwang-cn.github.io/#doc"},
+        {"@type":"ListItem","position":6,"name":"书架分区","item":"https://xxxxdianyingwang-cn.github.io/#stacks"},
+        {"@type":"ListItem","position":7,"name":"借阅规则","item":"https://xxxxdianyingwang-cn.github.io/#rules"},
+        {"@type":"ListItem","position":8,"name":"借阅排行","item":"https://xxxxdianyingwang-cn.github.io/#rank"}
+      ]
+    },
+    {
+      "@type":"ItemList",
+      "name":"xxxx电影网借阅排行",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"长夜微光"},
+        {"@type":"ListItem","position":2,"name":"落日放映厅"},
+        {"@type":"ListItem","position":3,"name":"纸上远行"},
+        {"@type":"ListItem","position":4,"name":"风与海之间"},
+        {"@type":"ListItem","position":5,"name":"静物笔记"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="notice">
+  <div class="wrap">
+    <span class="open"><i aria-hidden="true"></i>开馆中 · 09:00-23:00</span>
+    <span class="roll">
+      <span>xxxx电影网 今日编目</span>
+      <span>今日上架 <b>236</b> 条</span>
+      <span>馆藏 <b>36,480</b> 部</span>
+      <span>编目时段 <b>10:00 / 20:00</b></span>
+    </span>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="xxxx电影网首页">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 112 90" focusable="false">
+          <rect x="6" y="12" width="100" height="70" rx="3" fill="#c8a86b" stroke="#1f3a5f" stroke-width="3"></rect>
+          <g fill="#fffdf6" stroke="#1f3a5f" stroke-width="2.5">
+            <rect x="14" y="20" width="84" height="18" rx="2"></rect>
+            <rect x="14" y="42" width="84" height="18" rx="2"></rect>
+            <rect x="14" y="64" width="84" height="12" rx="2"></rect>
+          </g>
+          <rect x="22" y="25" width="42" height="8" fill="#b03a2e"></rect>
+          <rect x="22" y="47" width="34" height="8" fill="#37567d"></rect>
+          <circle cx="84" cy="29" r="4" fill="#c8a86b" stroke="#1f3a5f" stroke-width="2"></circle>
+          <circle cx="84" cy="51" r="4" fill="#c8a86b" stroke="#1f3a5f" stroke-width="2"></circle>
+        </svg>
+      </span>
+      <span class="logo-txt"><b><em>xxxx</em>电影网</b><span>XXXX CINEMA CATALOGUE</span></span>
+    </a>
+    <form class="search" role="search" onsubmit="return doSearch(event)">
+      <label class="sr" for="q">搜索影片</label>
+      <input id="q" type="search" placeholder="搜电影 / 剧集 / 演员…" autocomplete="off">
+      <button type="submit">检索</button>
+    </form>
+    <button class="burger" id="burger" aria-label="展开导航菜单" aria-expanded="false">☰</button>
+  </div>
+  <nav class="nav" id="nav" aria-label="网站主导航">
+    <div class="wrap">
+      <ul>
+        <li><a class="on" href="#">首页</a></li>
+        <li><a href="#movie">新书上架</a></li>
+        <li><a href="#tv">热播剧集</a></li>
+        <li><a href="#show">综艺动漫</a></li>
+        <li><a href="#doc">纪录片</a></li>
+        <li><a href="#stacks">书架分区</a></li>
+        <li><a href="#rules">借阅规则</a></li>
+        <li><a href="#rank">借阅排行</a></li>
+        <li><a href="#notes">读书笔记</a></li>
+        <li><a href="#about">关于我们</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- 主视觉：目录抽屉柜 -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <article class="cabinet">
+        <div class="cab-top">
+          <span class="ttl">xxxx电影网 · 影片目录柜</span>
+          <span class="no">CABINET NO. X-01 · 索书号 791.43</span>
+        </div>
+        <div class="cab-body">
+          <div class="bigcard">
+            <div class="bc-head">
+              <span class="call">索书号 <b>791.43 / L-001</b> · 本期主推</span>
+              <span class="stamp" aria-hidden="true">馆藏<br>推荐</span>
+            </div>
+            <div class="bc-mid">
+              <span class="genre">FEATURED · 剧情 / 文艺</span>
+              <h1 id="hero-title">长夜微光</h1>
+              <dl class="rows">
+                <div><dt>上架</dt><dd>2026</dd></div>
+                <div><dt>片长</dt><dd>124 MIN</dd></div>
+                <div><dt>版本</dt><dd>1080P / 4K</dd></div>
+              </dl>
+            </div>
+            <div class="bc-foot">
+              <p>xxxx电影网本期主推：一栋老图书馆的守夜人，用三十年整理出一部城市记忆。本站已同步更新剧情解析、演职员表、评分口碑与在线观看指南。</p>
+              <div class="hero-btns">
+                <a class="btn pri" href="#">立即观看</a>
+                <a class="btn" href="#">剧情介绍</a>
+              </div>
+            </div>
+          </div>
+          <div class="drawers">
+            <h3>NEW ARRIVALS · 今日上架</h3>
+            <ol>
+              <li>
+                <span class="cn">791.43<b>L-002</b></span>
+                <span class="meta"><b>落日放映厅</b><span>剧情 · 更新至第 10 集</span></span>
+                <span class="av">在架</span>
+              </li>
+              <li>
+                <span class="cn">791.43<b>L-003</b></span>
+                <span class="meta"><b>纸上远行</b><span>都市 · 更新至第 6 集</span></span>
+                <span class="av">在架</span>
+              </li>
+              <li>
+                <span class="cn">791.45<b>L-004</b></span>
+                <span class="meta"><b>风与海之间</b><span>爱情 · 高清 1080P</span></span>
+                <span class="av">在架</span>
+              </li>
+              <li>
+                <span class="cn">791.53<b>L-005</b></span>
+                <span class="meta"><b>静物笔记</b><span>纪录 · 9.2 分</span></span>
+                <span class="av">在架</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目一：新书上架 -->
+  <section id="movie" aria-labelledby="movie-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>01</span></span>
+          <div>
+            <h2 id="movie-t">新书上架</h2>
+            <span class="sub">NEW ARRIVALS · 每日编目</span>
+          </div>
+        </div>
+        <a class="more" href="#">查看全部 →</a>
+      </div>
+      <p style="margin:0 0 16px;font-size:13.5px;color:var(--ink3)">xxxx电影网每日两批编目上架，可按索书号分类筛选，卡片左侧为书脊与索书号，右下角为馆藏印章。</p>
+      <div class="shelf" role="tablist" aria-label="影片筛选">
+        <button class="on" data-f="all"><span class="dot" aria-hidden="true"></span>全部索书号</button>
+        <button data-f="drama"><span class="dot" aria-hidden="true"></span>791.43 剧情</button>
+        <button data-f="action"><span class="dot" aria-hidden="true"></span>791.44 动作</button>
+        <button data-f="love"><span class="dot" aria-hidden="true"></span>791.45 爱情</button>
+        <button data-f="comedy"><span class="dot" aria-hidden="true"></span>791.46 喜剧</button>
+        <button data-f="scifi"><span class="dot" aria-hidden="true"></span>791.47 科幻</button>
+      </div>
+      <div class="catalogue" id="movieGrid">
+        <article class="cat s1" data-cat="drama"><a href="#"><span class="spine" role="img" aria-label="长夜微光 书脊"><span class="vno">791.43 / L-001</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.43 L-001</b></span><span class="score">8.9</span></span><span class="mid"><b>长夜微光</b><span class="sub">2026 · 剧情 / 文艺</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>片长</dt><dd>124 MIN</dd></div><div><dt>借阅</dt><dd>9.5 万</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s2" data-cat="action"><a href="#"><span class="spine" role="img" aria-label="极速追击 书脊"><span class="vno">791.44 / L-006</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.44 L-006</b></span><span class="score">8.3</span></span><span class="mid"><b>极速追击</b><span class="sub">2026 · 动作 / 犯罪</span></span><dl><div><dt>版本</dt><dd class="hi">4K</dd></div><div><dt>片长</dt><dd>114 MIN</dd></div><div><dt>借阅</dt><dd>6.9 万</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s6" data-cat="love"><a href="#"><span class="spine" role="img" aria-label="风与海之间 书脊"><span class="vno">791.45 / L-004</span><span class="band" aria-hidden="true"></span><span class="yr">2025</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.45 L-004</b></span><span class="score">7.9</span></span><span class="mid"><b>风与海之间</b><span class="sub">2025 · 爱情 / 文艺</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>片长</dt><dd>106 MIN</dd></div><div><dt>借阅</dt><dd>5.4 万</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s4" data-cat="comedy"><a href="#"><span class="spine" role="img" aria-label="开心杂货铺 书脊"><span class="vno">791.46 / L-007</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.46 L-007</b></span><span class="score">7.8</span></span><span class="mid"><b>开心杂货铺</b><span class="sub">2026 · 喜剧 / 生活</span></span><dl><div><dt>版本</dt><dd>720P</dd></div><div><dt>片长</dt><dd>98 MIN</dd></div><div><dt>借阅</dt><dd>4.6 万</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s5" data-cat="scifi"><a href="#"><span class="spine" role="img" aria-label="星海孤舟 书脊"><span class="vno">791.47 / L-008</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.47 L-008</b></span><span class="score">8.6</span></span><span class="mid"><b>星海孤舟</b><span class="sub">2026 · 科幻 / 冒险</span></span><dl><div><dt>版本</dt><dd class="hi">4K</dd></div><div><dt>片长</dt><dd>138 MIN</dd></div><div><dt>借阅</dt><dd>8.2 万</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s3" data-cat="drama"><a href="#"><span class="spine" role="img" aria-label="旧巷时光 书脊"><span class="vno">791.43 / L-009</span><span class="band" aria-hidden="true"></span><span class="yr">2025</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.43 L-009</b></span><span class="score">8.4</span></span><span class="mid"><b>旧巷时光</b><span class="sub">2025 · 剧情 / 家庭</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>片长</dt><dd>119 MIN</dd></div><div><dt>借阅</dt><dd>5.9 万</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s2" data-cat="action"><a href="#"><span class="spine" role="img" aria-label="铁血防线 书脊"><span class="vno">791.44 / L-010</span><span class="band" aria-hidden="true"></span><span class="yr">2025</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.44 L-010</b></span><span class="score">7.6</span></span><span class="mid"><b>铁血防线</b><span class="sub">2025 · 动作 / 战争</span></span><dl><div><dt>版本</dt><dd>720P</dd></div><div><dt>片长</dt><dd>131 MIN</dd></div><div><dt>借阅</dt><dd>4.2 万</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s4" data-cat="comedy"><a href="#"><span class="spine" role="img" aria-label="爆笑考场 书脊"><span class="vno">791.46 / L-011</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.46 L-011</b></span><span class="score">8.0</span></span><span class="mid"><b>爆笑考场</b><span class="sub">2026 · 喜剧 / 校园</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>片长</dt><dd>95 MIN</dd></div><div><dt>借阅</dt><dd>6.3 万</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+      </div>
+      <div class="empty" id="movieEmpty">没有匹配的影片，换个索书号或关键词试试～</div>
+      <div style="margin-top:22px"><button class="btn" id="moreMovie">再上一批</button></div>
+    </div>
+  </section>
+
+  <!-- 栏目二：热播剧集 -->
+  <section id="tv" aria-labelledby="tv-t" style="background:rgba(227,213,181,.42)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>02</span></span>
+          <div>
+            <h2 id="tv-t">热播剧集</h2>
+            <span class="sub">HOT SERIES · 连续编目</span>
+          </div>
+        </div>
+        <a class="more" href="#">剧集时间表 →</a>
+      </div>
+      <div class="catalogue">
+        <article class="cat s1"><a href="#"><span class="spine" role="img" aria-label="落日放映厅 书脊"><span class="vno">791.43 / L-002</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.43 L-002</b></span><span class="score">9.0</span></span><span class="mid"><b>落日放映厅</b><span class="sub">年代 · 每周三更新</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>集长</dt><dd>45 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">热借<br>中</span></span></a></article>
+        <article class="cat s3"><a href="#"><span class="spine" role="img" aria-label="纸上远行 书脊"><span class="vno">791.43 / L-003</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.43 L-003</b></span><span class="score">8.7</span></span><span class="mid"><b>纸上远行</b><span class="sub">都市 · 每周六更新</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>集长</dt><dd>45 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">热借<br>中</span></span></a></article>
+        <article class="cat s5"><a href="#"><span class="spine" role="img" aria-label="城市之下 书脊"><span class="vno">791.43 / L-012</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.43 L-012</b></span><span class="score">8.4</span></span><span class="mid"><b>城市之下</b><span class="sub">职场 · 30 集</span></span><dl><div><dt>版本</dt><dd class="hi">4K</dd></div><div><dt>集长</dt><dd>45 MIN</dd></div><div><dt>状态</dt><dd>全集</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s4"><a href="#"><span class="spine" role="img" aria-label="春水生 书脊"><span class="vno">791.43 / L-013</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.43 L-013</b></span><span class="score">7.9</span></span><span class="mid"><b>春水生</b><span class="sub">年代情感 · 每周一更新</span></span><dl><div><dt>版本</dt><dd>720P</dd></div><div><dt>集长</dt><dd>45 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+        <article class="cat s2"><a href="#"><span class="spine" role="img" aria-label="暗线 书脊"><span class="vno">791.44 / L-014</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.44 L-014</b></span><span class="score">8.6</span></span><span class="mid"><b>暗线</b><span class="sub">谍战 · 每周五更新</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>集长</dt><dd>45 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">热借<br>中</span></span></a></article>
+        <article class="cat s6"><a href="#"><span class="spine" role="img" aria-label="课间十分钟 书脊"><span class="vno">791.46 / L-015</span><span class="band" aria-hidden="true"></span><span class="yr">2025</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.46 L-015</b></span><span class="score">8.1</span></span><span class="mid"><b>课间十分钟</b><span class="sub">青春校园 · 24 集</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>集长</dt><dd>42 MIN</dd></div><div><dt>状态</dt><dd>全集</dd></div></dl><span class="stamp" aria-hidden="true">馆藏<br>可借</span></span></a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目三：综艺动漫 -->
+  <section id="show" aria-labelledby="show-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>03</span></span>
+          <div>
+            <h2 id="show-t">综艺 · 动漫</h2>
+            <span class="sub">SHOWS &amp; ANIME · 期刊区</span>
+          </div>
+        </div>
+        <a class="more" href="#">更多综艺动漫 →</a>
+      </div>
+      <div class="catalogue">
+        <article class="cat s4"><a href="#"><span class="spine" role="img" aria-label="午后茶话 书脊"><span class="vno">791.48 / L-016</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.48 L-016</b></span><span class="score">8.3</span></span><span class="mid"><b>午后茶话</b><span class="sub">真人秀 · 更新至第 11 期</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>时长</dt><dd>60 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">期刊<br>在订</span></span></a></article>
+        <article class="cat s3"><a href="#"><span class="spine" role="img" aria-label="灶上有江湖 书脊"><span class="vno">791.48 / L-017</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.48 L-017</b></span><span class="score">8.8</span></span><span class="mid"><b>灶上有江湖</b><span class="sub">美食 · 更新至第 7 期</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>时长</dt><dd>50 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">期刊<br>在订</span></span></a></article>
+        <article class="cat s5"><a href="#"><span class="spine" role="img" aria-label="山海灵兽录 书脊"><span class="vno">791.49 / L-018</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.49 L-018</b></span><span class="score">9.1</span></span><span class="mid"><b>山海灵兽录</b><span class="sub">国漫 · 更新至第 30 话</span></span><dl><div><dt>版本</dt><dd class="hi">4K</dd></div><div><dt>时长</dt><dd>24 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">热借<br>中</span></span></a></article>
+        <article class="cat s1"><a href="#"><span class="spine" role="img" aria-label="追风少年 书脊"><span class="vno">791.49 / L-019</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.49 L-019</b></span><span class="score">8.5</span></span><span class="mid"><b>追风少年</b><span class="sub">热血 · 更新至第 16 话</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>时长</dt><dd>24 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">期刊<br>在订</span></span></a></article>
+        <article class="cat s6"><a href="#"><span class="spine" role="img" aria-label="声音的形状 书脊"><span class="vno">791.48 / L-020</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.48 L-020</b></span><span class="score">8.4</span></span><span class="mid"><b>声音的形状</b><span class="sub">音乐 · 每周四更新</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>时长</dt><dd>70 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">期刊<br>在订</span></span></a></article>
+        <article class="cat s3"><a href="#"><span class="spine" role="img" aria-label="小食记 书脊"><span class="vno">791.49 / L-021</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.49 L-021</b></span><span class="score">8.9</span></span><span class="mid"><b>小食记</b><span class="sub">治愈 · 更新至第 10 话</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>时长</dt><dd>20 MIN</dd></div><div><dt>状态</dt><dd>更新中</dd></div></dl><span class="stamp" aria-hidden="true">期刊<br>在订</span></span></a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目四：纪录片 -->
+  <section id="doc" aria-labelledby="doc-t" style="background:rgba(227,213,181,.42)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>04</span></span>
+          <div>
+            <h2 id="doc-t">高分纪录片</h2>
+            <span class="sub">DOCUMENTARY · 特藏区</span>
+          </div>
+        </div>
+        <a class="more" href="#">纪录片专区 →</a>
+      </div>
+      <div class="catalogue">
+        <article class="cat s3"><a href="#"><span class="spine" role="img" aria-label="大江之源 书脊"><span class="vno">791.53 / L-022</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.53 L-022</b></span><span class="score">9.3</span></span><span class="mid"><b>大江之源</b><span class="sub">6 集 · 地理人文</span></span><dl><div><dt>版本</dt><dd class="hi">4K</dd></div><div><dt>时长</dt><dd>52 MIN</dd></div><div><dt>状态</dt><dd>全集</dd></div></dl><span class="stamp" aria-hidden="true">特藏<br>在架</span></span></a></article>
+        <article class="cat s4"><a href="#"><span class="spine" role="img" aria-label="手艺人 书脊"><span class="vno">791.53 / L-023</span><span class="band" aria-hidden="true"></span><span class="yr">2026</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.53 L-023</b></span><span class="score">9.2</span></span><span class="mid"><b>手艺人</b><span class="sub">8 集 · 非遗纪录</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>时长</dt><dd>45 MIN</dd></div><div><dt>状态</dt><dd>全集</dd></div></dl><span class="stamp" aria-hidden="true">特藏<br>在架</span></span></a></article>
+        <article class="cat s1"><a href="#"><span class="spine" role="img" aria-label="深海之下 书脊"><span class="vno">791.53 / L-024</span><span class="band" aria-hidden="true"></span><span class="yr">2025</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.53 L-024</b></span><span class="score">9.0</span></span><span class="mid"><b>深海之下</b><span class="sub">5 集 · 海洋探索</span></span><dl><div><dt>版本</dt><dd class="hi">4K</dd></div><div><dt>时长</dt><dd>48 MIN</dd></div><div><dt>状态</dt><dd>全集</dd></div></dl><span class="stamp" aria-hidden="true">特藏<br>在架</span></span></a></article>
+        <article class="cat s5"><a href="#"><span class="spine" role="img" aria-label="静物笔记 书脊"><span class="vno">791.53 / L-005</span><span class="band" aria-hidden="true"></span><span class="yr">2025</span></span><span class="slip"><span class="top"><span class="cn">索书号 <b>791.53 L-005</b></span><span class="score">8.7</span></span><span class="mid"><b>静物笔记</b><span class="sub">10 集 · 城市观察</span></span><dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>时长</dt><dd>40 MIN</dd></div><div><dt>状态</dt><dd>全集</dd></div></dl><span class="stamp" aria-hidden="true">特藏<br>在架</span></span></a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目五：书架分区 -->
+  <section id="stacks" aria-labelledby="st-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>05</span></span>
+          <div>
+            <h2 id="st-t">书架分区</h2>
+            <span class="sub">STACK RANGES · 分类排架</span>
+          </div>
+        </div>
+        <a class="more" href="#">全部片库 →</a>
+      </div>
+      <p style="margin:0 0 16px;font-size:13.5px;color:var(--ink3)">xxxx电影网把片库按索书号区间排架，每个书架一个题材，卡片式目录可整架浏览。</p>
+      <div class="stacks">
+        <a href="#"><span class="rng">791.43 / A 架</span><b>剧情架</b><span>在架 6,180 部</span><span class="shelfline" aria-hidden="true"></span></a>
+        <a href="#"><span class="rng">791.44 / B 架</span><b>动作架</b><span>在架 2,480 部</span><span class="shelfline" aria-hidden="true"></span></a>
+        <a href="#"><span class="rng">791.45 / C 架</span><b>爱情架</b><span>在架 4,320 部</span><span class="shelfline" aria-hidden="true"></span></a>
+        <a href="#"><span class="rng">791.53 / D 架</span><b>纪实架</b><span>在架 2,840 部</span><span class="shelfline" aria-hidden="true"></span></a>
+        <a href="#"><span class="rng">791.47 / E 架</span><b>幻境架</b><span>在架 1,960 部</span><span class="shelfline" aria-hidden="true"></span></a>
+        <a href="#"><span class="rng">791.46 / F 架</span><b>欢笑架</b><span>在架 3,260 部</span><span class="shelfline" aria-hidden="true"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目六：借阅规则 -->
+  <section id="rules" aria-labelledby="ru-t" style="background:rgba(227,213,181,.42)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>06</span></span>
+          <div>
+            <h2 id="ru-t">借阅规则</h2>
+            <span class="sub">BORROWING RULES · 四则说明</span>
+          </div>
+        </div>
+        <a class="more" href="#">全部说明 →</a>
+      </div>
+      <ol class="rules">
+        <li>
+          <em>规则 01</em>
+          <b>时段 · 编目时间</b>
+          <span>每日 10:00 与 20:00 两个主批次编目上架，剧集按原播出节奏同步跟进。</span>
+        </li>
+        <li>
+          <em>规则 02</em>
+          <b>版本 · 清晰度</b>
+          <span>支持 4K、1080P、720P 与自适应四档，移动端在移动网络下默认降档。</span>
+        </li>
+        <li>
+          <em>规则 03</em>
+          <b>续借 · 追更提醒</b>
+          <span>连载剧集与动漫按更新节奏推送提醒，可在卡片内查看当前进度与剩余集数。</span>
+        </li>
+        <li>
+          <em>规则 04</em>
+          <b>归还 · 版权说明</b>
+          <span>本站仅提供影视信息介绍与索引，如涉及侵权可通过页脚入口提交，核实后处理。</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 栏目七：借阅排行 + 站点数据 -->
+  <section id="rank" aria-labelledby="rank-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>07</span></span>
+          <div>
+            <h2 id="rank-t">xxxx电影网借阅排行</h2>
+            <span class="sub">RANKING · 每日 10:00 / 20:00 刷新</span>
+          </div>
+        </div>
+        <a class="more" href="#">完整榜单 →</a>
+      </div>
+      <div class="cols">
+        <div class="panel">
+          <h3>今日借阅 TOP 8</h3>
+          <ol class="loans">
+            <li><span class="no">01</span><span class="ti"><b>长夜微光</b><span>791.43 / L-001</span></span><span class="bar" aria-hidden="true"><i style="width:96%"></i></span><span class="cnt">9.5 万</span></li>
+            <li><span class="no">02</span><span class="ti"><b>落日放映厅</b><span>791.43 / L-002</span></span><span class="bar" aria-hidden="true"><i style="width:90%"></i></span><span class="cnt">8.9 万</span></li>
+            <li><span class="no">03</span><span class="ti"><b>纸上远行</b><span>791.43 / L-003</span></span><span class="bar" aria-hidden="true"><i style="width:85%"></i></span><span class="cnt">8.4 万</span></li>
+            <li><span class="no">04</span><span class="ti"><b>星海孤舟</b><span>791.47 / L-008</span></span><span class="bar" aria-hidden="true"><i style="width:79%"></i></span><span class="cnt">7.8 万</span></li>
+            <li><span class="no">05</span><span class="ti"><b>静物笔记</b><span>791.53 / L-005</span></span><span class="bar" aria-hidden="true"><i style="width:72%"></i></span><span class="cnt">7.1 万</span></li>
+            <li><span class="no">06</span><span class="ti"><b>暗线</b><span>791.44 / L-014</span></span><span class="bar" aria-hidden="true"><i style="width:66%"></i></span><span class="cnt">6.5 万</span></li>
+            <li><span class="no">07</span><span class="ti"><b>山海灵兽录</b><span>791.49 / L-018</span></span><span class="bar" aria-hidden="true"><i style="width:59%"></i></span><span class="cnt">5.8 万</span></li>
+            <li><span class="no">08</span><span class="ti"><b>午后茶话</b><span>791.48 / L-016</span></span><span class="bar" aria-hidden="true"><i style="width:52%"></i></span><span class="cnt">5.1 万</span></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h3>站点数据</h3>
+          <div class="kv"><b>馆藏影片总量</b><span>36,480 部</span></div>
+          <div class="kv"><b>今日编目</b><span>236 条</span></div>
+          <div class="kv"><b>覆盖类型</b><span>电影 / 剧集 / 综艺 / 动漫 / 纪录片</span></div>
+          <div class="kv"><b>书架分区</b><span>791.43 至 791.53 共 6 架</span></div>
+          <div class="kv"><b>更新时间</b><span>每日 10:00 / 20:00</span></div>
+          <h3 style="margin-top:20px">热门标签</h3>
+          <div class="tags">
+            <a href="#">最新电影</a><a href="#">在线观看</a><a href="#">高清片源</a><a href="#">院线新片</a>
+            <a href="#">国产剧</a><a href="#">国漫</a><a href="#">经典老片</a><a href="#">高分榜</a>
+            <a href="#">治愈番</a><a href="#">纪实人文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目八：读书笔记 -->
+  <section id="notes" aria-labelledby="nt-t" style="background:rgba(227,213,181,.42)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>08</span></span>
+          <div>
+            <h2 id="nt-t">读书笔记 · 影视资讯与影评</h2>
+            <span class="sub">READING NOTES &amp; REVIEWS</span>
+          </div>
+        </div>
+        <a class="more" href="#">资讯中心 →</a>
+      </div>
+      <div class="notes">
+        <article>
+          <div class="tab"><span>笔记 · 01</span><span>2026.09.30</span></div>
+          <div class="bd">
+            <h3><a href="#">《长夜微光》观后：一栋老图书馆的城市记忆</a></h3>
+            <p>xxxx电影网影评组从叙事结构、空间调度与配乐三个角度，聊聊这部新作为何值得二刷。</p>
+            <footer><time datetime="2026-09-30">编目 20:00 · 夜间批次</time></footer>
+          </div>
+        </article>
+        <article>
+          <div class="tab"><span>笔记 · 02</span><span>2026.09.29</span></div>
+          <div class="bd">
+            <h3><a href="#">本周追更表：落日放映厅、纸上远行更新时间与剧情节点</a></h3>
+            <p>整理本周热门剧集的更新节奏与关键走向，方便 xxxx电影网用户提前安排追剧时间。</p>
+            <footer><time datetime="2026-09-29">编目 14:00 · 午后补充</time></footer>
+          </div>
+        </article>
+        <article>
+          <div class="tab"><span>笔记 · 03</span><span>2026.09.28</span></div>
+          <div class="bd">
+            <h3><a href="#">清晰度怎么选：不同网络环境下的观看建议</a></h3>
+            <p>从带宽需求、设备性能到流量消耗，讲清楚 720P、1080P 与 4K 各自的适用场景。</p>
+            <footer><time datetime="2026-09-28">编目 10:00 · 晨间批次</time></footer>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目九：关于 -->
+  <section id="about" aria-labelledby="about-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left">
+          <span class="tab" aria-hidden="true"><span>09</span></span>
+          <div>
+            <h2 id="about-t">关于xxxx电影网</h2>
+            <span class="sub">ABOUT</span>
+          </div>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="panel">
+          <h3>站点简介</h3>
+          <p style="margin:0;font-size:14.5px;color:var(--ink3);line-height:1.95">xxxx电影网（网址 https://xxxxdianyingwang-cn.github.io）专注影视信息聚合，提供电影、电视剧、综艺、动漫、纪录片的剧情介绍、演职员表、评分口碑与在线观看指南，并设有书架分区与借阅规则，按索书号区间排架整理片源，每日早晚两更借阅排行与原创影评。页面采用移动端自适应布局，手机、平板、桌面端均可流畅浏览。</p>
+          <div class="tags" style="margin-top:16px">
+            <a href="#">关于我们</a><a href="#">联系方式</a><a href="#">侵权投诉</a><a href="#">收录规则</a><a href="#">网站地图</a>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>常见问题</h3>
+          <dl class="faq">
+            <div><dt>Q1</dt><dd><b>书架分区是怎么划分的？</b><span>按内容调性分为剧情、动作、爱情、纪实、幻境、欢笑六个书架，各架有独立索书号区间。</span></dd></div>
+            <div><dt>Q2</dt><dd><b>每天什么时候更新？</b><span>每日 10:00 与 20:00 两个主批次编目，另有 14:00 午后补充批次。</span></dd></div>
+            <div><dt>Q3</dt><dd><b>清晰度可以切换吗？</b><span>支持 4K、1080P、720P 与自适应四档，移动端在移动网络下默认降档。</span></dd></div>
+            <div><dt>Q4</dt><dd><b>内容侵权如何反馈？</b><span>本站仅提供影视信息介绍与索引，可通过页脚"侵权投诉"入口提交，核实后处理。</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>xxxx电影网</h4>
+        <p>网址：https://xxxxdianyingwang-cn.github.io</p>
+        <p>影视信息聚合 · 每日编目 · 移动端自适应</p>
+      </div>
+      <div>
+        <h4>频道导航</h4>
+        <ul>
+          <li><a href="#movie">新书上架</a></li>
+          <li><a href="#tv">热播剧集</a></li>
+          <li><a href="#show">综艺动漫</a></li>
+          <li><a href="#doc">纪录片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>检索工具</h4>
+        <ul>
+          <li><a href="#stacks">书架分区</a></li>
+          <li><a href="#rules">借阅规则</a></li>
+          <li><a href="#rank">借阅排行</a></li>
+          <li><a href="#notes">读书笔记</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助中心</h4>
+        <ul>
+          <li><a href="#">播放问题</a></li>
+          <li><a href="#">清晰度切换</a></li>
+          <li><a href="#">内容纠错</a></li>
+          <li><a href="#">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">本站仅提供影视信息介绍与索引，所列影片版权归原权利人所有，如涉及侵权请联系我们处理。<br>© 2026 xxxx电影网 · <b>https://xxxxdianyingwang-cn.github.io</b></p>
+  </div>
+</footer>
+
+<button class="top" id="toTop" aria-label="返回顶部">↑</button>
+
+<script>
+(function(){
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+      document.querySelectorAll('.nav a').forEach(function(a){a.classList.remove('on');});
+      e.target.classList.add('on');
+    }
+  });
+
+  var grid = document.getElementById('movieGrid');
+  var empty = document.getElementById('movieEmpty');
+  document.querySelectorAll('.shelf button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.shelf button').forEach(function(b){b.classList.remove('on');});
+      btn.classList.add('on');
+      var f = btn.dataset.f, shown = 0;
+      grid.querySelectorAll('.cat').forEach(function(c){
+        var hit = (f === 'all') || c.dataset.cat === f;
+        c.style.display = hit ? '' : 'none';
+        if(hit) shown++;
+      });
+      empty.style.display = shown ? 'none' : 'block';
+    });
+  });
+
+  var extra = [['浮城旧事','剧情','791.43','s3'],['极速前线','动作','791.44','s2'],['银河旅店','科幻','791.47','s5'],
+               ['笑傲考场','喜剧','791.46','s4'],['夜行客 2','动作','791.44','s6'],['归途列车','剧情','791.43','s1']];
+  document.getElementById('moreMovie').addEventListener('click', function(){
+    var self = this;
+    extra.forEach(function(it, idx){
+      var el = document.createElement('article');
+      el.className = 'cat ' + it[3];
+      el.setAttribute('data-cat','all');
+      var no = it[2] + ' / L-0' + (30 + idx);
+      el.innerHTML = '<a href="#"><span class="spine" role="img" aria-label="' + it[0] + ' 书脊">' +
+        '<span class="vno">' + no + '</span><span class="band" aria-hidden="true"></span>' +
+        '<span class="yr">2026</span></span>' +
+        '<span class="slip"><span class="top"><span class="cn">索书号 <b>' + no + '</b></span>' +
+        '<span class="score">8.0</span></span><span class="mid"><b>' + it[0] + '</b>' +
+        '<span class="sub">2026 · ' + it[1] + '</span></span>' +
+        '<dl><div><dt>版本</dt><dd class="hi">1080P</dd></div><div><dt>片长</dt><dd>110 MIN</dd></div>' +
+        '<div><dt>借阅</dt><dd>2.4 万</dd></div></dl>' +
+        '<span class="stamp" aria-hidden="true">新编<br>可借</span></span></a>';
+      grid.appendChild(el);
+    });
+    self.textContent = '本批已全部编目';
+    self.disabled = true;
+    self.style.opacity = .55;
+  });
+
+  var topBtn = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    topBtn.classList.toggle('show', window.scrollY > 400);
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  window.doSearch = function(e){
+    e.preventDefault();
+    var kw = document.getElementById('q').value.trim();
+    if(!kw){ document.getElementById('q').focus(); return false; }
+    var hit = 0;
+    document.querySelectorAll('.cat').forEach(function(c){
+      var ok = c.textContent.indexOf(kw) > -1;
+      c.style.display = ok ? '' : 'none';
+      if(ok) hit++;
+    });
+    empty.style.display = hit ? 'none' : 'block';
+    document.getElementById('movie').scrollIntoView({behavior:'smooth'});
+    return false;
+  };
+})();
+</script>
+</body>
+</html>
